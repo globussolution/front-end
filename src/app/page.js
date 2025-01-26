@@ -1,3 +1,4 @@
+import LoanCalculator from "@/components/LoanCalculator";
 import Image from "next/image";
 
 export default function Home() {
@@ -194,6 +195,10 @@ export default function Home() {
             }}
           />
         </div>
+      </div>
+      {/* Calculator Section */}
+      <div>
+        <LoanCalculator />
       </div>
       {/* Features Section */}
       <section className="text-gray-600 body-font">
