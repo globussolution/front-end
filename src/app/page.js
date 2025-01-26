@@ -195,11 +195,10 @@ export default function Home() {
             }}
           />
         </div>
-      </div>
-      {/* Calculator Section */}
-      <div>
         <LoanCalculator />
       </div>
+      {/* Calculator Section */}
+
       {/* Features Section */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">

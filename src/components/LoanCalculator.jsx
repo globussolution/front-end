@@ -67,7 +67,7 @@ export default function LoanCalculator() {
       return;
     }
 
-    const loanPeriodYears = parseInt(loanPeriod, 10);
+    // const loanPeriodYears = parseInt(loanPeriod, 10);
     const loanAmount = loanAmountDesired; // User's desired loan amount
     const monthlyInstallment = loanAmount / (loanPeriodYears * 12);
 
