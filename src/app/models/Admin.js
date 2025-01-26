@@ -1,24 +1,15 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
+const adminSchema = new mongoose.Schema(
   {
     name: {
       type: String,
       required: true,
-      trim: true,
     },
     email: {
       type: String,
       required: true,
       unique: true,
-      lowercase: true,
-    },
-    cnic: {
-      type: String,
-      required: true,
-      unique: true,
-      minlength: 13,
-      maxlength: 13,
     },
     password: {
       type: String,
@@ -26,8 +17,8 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ["user", "admin"],
-      default: "user",
+      enum: ["admin"],
+      default: "admin",
     },
     createdAt: {
       type: Date,
@@ -37,6 +28,6 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const User = mongoose.models.User || mongoose.model("User", userSchema);
+const Admin = mongoose.models.Admin || mongoose.model("Admin", adminSchema);
 
-export default User;
+export default Admin;
