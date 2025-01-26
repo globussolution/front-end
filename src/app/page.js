@@ -1,5 +1,6 @@
 import LoanCalculator from "@/components/LoanCalculator";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -101,38 +102,38 @@ export default function Home() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <a
-                    href="#"
+                  <Link
+                    href="/loancalculator"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
-                    Product
-                  </a>
-                  <a
+                    Loan Calculator
+                  </Link>
+                  <Link
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Features
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Marketplace
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Company
-                  </a>
+                  </Link>
                 </div>
                 <div className="py-6">
-                  <a
+                  <Link
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -171,15 +172,15 @@ export default function Home() {
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
-              </a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">
+              </Link>
+              <Link href="#" className="text-sm/6 font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -197,7 +198,6 @@ export default function Home() {
         </div>
         <LoanCalculator />
       </div>
-      {/* Calculator Section */}
 
       {/* Features Section */}
       <section className="text-gray-600 body-font">
